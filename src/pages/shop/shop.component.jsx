@@ -5,7 +5,8 @@ import CollectionsOverview from "../../components/collections-overview/collectio
 import CollectionPage from "../collection/collection.component"
 
 const ShopPage = ({match}) => (
-    <div className="shop-page">
+    //removed className shop-page of the div de abajo..no cumplia funcion aparentemete
+    <div>
         <Route exact path={`${match.path}`} component={CollectionsOverview}/>
         <Route path={`${match.path}/:collectionId`} component={CollectionPage}/>
     </div>
